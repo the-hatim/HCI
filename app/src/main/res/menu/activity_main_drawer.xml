@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/nav_remote"
+            android:icon="@drawable/ic_menu_remote"
+            android:title="Remote" />
+        <item
+            android:id="@+id/nav_servers"
+            android:icon="@drawable/ic_menu_servers"
+            android:title="Servers" />
+
+    </group>
+    <group >
+        <item android:title="Customize">
+            <menu>
+                <item
+                    android:id="@+id/nav_preferences"
+                    android:icon="@drawable/ic_menu_preferences"
+                    android:title="Preferences" />
+            </menu>
+        </item>
+    </group>
+
+    <group >
+        <item android:title="Others">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_status"
+                    android:icon="@drawable/ic_menu_status"
+                    android:title="Status" />
+            </menu>
+        </item>
+    </group>
+</menu>

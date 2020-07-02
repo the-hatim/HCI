@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.projectmasp.projectxyz.Servers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/server_label_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Servers"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/hr_line" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/saved_servers_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Servers have been Added."
+            />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/server_label_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="Found Servers"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/hr_line" />
+
+        <TextView
+            android:id="@+id/discover_servers_textview"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Searching for servers..."
+            />
+
+
+        <EditText
+            android:id="@+id/server_ip"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:digits="0123456789."
+            />
+
+        <TextView
+            android:id="@+id/server_ip_disp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="192.168.1.2"/>
+        <Button
+            android:id="@+id/get_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

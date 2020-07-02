@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.projectmasp.projectxyz.Remote">
+
+    <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+           android:id="@+id/info_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:lines="6"
+           android:textColor="@color/black"
+           android:gravity="center"
+           android:text=" To use cursor, move your device while holding.\n\n Use Left, Right Click buttons to perform actions.\n\n Enable Gesture Control to perform Gesture Operations.\n         " />
+
+           <Button
+               android:id="@+id/btn_left_click"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:textColor="@color/btnText"
+               android:paddingBottom="16dp"
+               android:text="Left Click" />
+
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Gesture"
+               android:id="@+id/switch1"
+               android:layout_alignParentBottom="true"
+               android:paddingBottom="10dp"
+               android:layout_centerHorizontal="true" />
+
+           <Button
+               android:id="@+id/btn_right_click"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentBottom="true"
+               android:textColor="@color/btnText"
+               android:paddingBottom="16dp"
+               android:text="Right Click" />
+       </RelativeLayout>
+
+</FrameLayout>
